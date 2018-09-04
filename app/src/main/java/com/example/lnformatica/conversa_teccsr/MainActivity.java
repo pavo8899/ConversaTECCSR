@@ -119,7 +119,12 @@ public class MainActivity extends AppCompatActivity implements OnDSListener, OnD
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_bluetooth) {
+            item.setIcon(R.drawable.ic_baseline_bluetooth_enabled);
+            return true;
+        }
+        if (id == R.id.action_network) {
+            item.setIcon(R.drawable.ic_baseline_network_enabled);
             return true;
         }
 
